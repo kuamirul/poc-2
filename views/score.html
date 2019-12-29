@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>PREFCHEM-CERDAS POC</title>
+
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</head>
+<body>
+
+<div class='container'>
+
+	
+<div class="row">
+    <form class="col s12" action="/getScore" method="get">
+	  <h4>Corrosion Rate Prediction </h4>
+	  <h5>Insert parameter values:</h5>	
+      <div class="row">
+        <div class="input-field inline col s2">
+          <input placeholder="Parameter 1" id="param_1" name="param_1" type="text" class="validate">
+          <label for="param_1">Parameter 1</label>
+        </div>
+		<div class="input-field inline col s2">
+          <input placeholder="Parameter 2" id="param_2" name="param_2" type="text" class="validate">
+          <label for="param_2">Parameter 2</label>
+        </div>
+		<div class="input-field inline col s2">
+          <input placeholder="Parameter 3" id="param_3" name="param_3" type="text" class="validate">
+          <label for="param_3">Parameter 3</label>
+        </div>
+		<div class="input-field inline col s2">
+          <input placeholder="Parameter 4" id="param_4" name="param_4" type="text" class="validate">
+          <label for="param_4">Parameter 4</label>
+        </div>
+		<div class="input-field inline col s2">
+          <input placeholder="Parameter 5" id="param_5" name="param_5" type="text" class="validate">
+          <label for="param_5">Parameter 5</label>
+        </div>
+		<div class="col s2">
+		  <input type="submit" value="Submit">
+		<div class="input-field inline">
+          <input disabled placeholder="Predicted value" id="out_value" type="text" class="validate">
+          <label for="out_value">Predicted value:</label>
+        </div>		  
+        </div>
+
+      </div>
+	  <!-- <div class="row"> -->
+		<!-- <div class="input-field inline col s2 offset-s10"> -->
+          <!-- <input disabled placeholder="Predicted value" id="out_value" type="text" class="validate"> -->
+          <!-- <label for="out_value">Predicted value:</label> -->
+        <!-- </div>	   -->
+	  <!-- </div> -->
+	  
+    </form>
+  </div>
+        	
+          <!-- <section class="col-xs-12 col-sm-6 col-md-6"> -->
+
+                <!-- <h2>Request information</h2> -->
+                <!-- <p>Page view count: -->
+                <!-- <% if (pageCountMessage) { %> -->
+                   <!-- <span class="code" id="count-value"><%=pageCountMessage%></span> -->
+                   <!-- </p> -->
+                    <!-- <div class="code"><h3>DB Connection Info:</h3> -->
+                      <!-- <table style='margin-left: 20px'> -->
+                          <!-- <tr><td>Type:</td><td><%= dbInfo.type %></td></tr> -->
+                          <!-- <tr><td>URL:</td><td><%= dbInfo.url %></td></tr> -->
+                      <!-- </table> -->
+                    <!-- </div> -->
+                <!-- <% } else { %> -->
+                   <!-- <span class="code" id="count-value">No database configured</span> -->
+                   <!-- </p> -->
+                <!-- <%} %> -->
+          <!-- </section> -->
+        </div>
+
+        <footer>
+          <div class="logo"></div>
+        </footer>
+</div>
+</body>
+</html>
