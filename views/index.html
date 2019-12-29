@@ -20,31 +20,31 @@
 	
 <div class="row">
     <form class="col s12" action="/getScore" method="get">
-	  <h4>Corrosion Rate Prediction </h4>
+	  <h4>Treated ATM Column Overhead Corrosion Rate Prediction </h4>
 	  <h5>Insert parameter values:</h5>	
       <div class="row">
         <div class="input-field inline col s2">
           <input placeholder="Parameter 1" id="param_1" name="param_1" type="text" class="validate">
-          <label for="param_1">Parameter 1</label>
+          <label for="param_1">Salt</label>
         </div>
 		<div class="input-field inline col s2">
           <input placeholder="Parameter 2" id="param_2" name="param_2" type="text" class="validate">
-          <label for="param_2">Parameter 2</label>
+          <label for="param_2">BS&W</label>
         </div>
 		<div class="input-field inline col s2">
           <input placeholder="Parameter 3" id="param_3" name="param_3" type="text" class="validate">
-          <label for="param_3">Parameter 3</label>
+          <label for="param_3">Temperature</label>
         </div>
-		<div class="input-field inline col s2">
-          <input placeholder="Parameter 4" id="param_4" name="param_4" type="text" class="validate">
-          <label for="param_4">Parameter 4</label>
-        </div>
-		<div class="input-field inline col s2">
-          <input placeholder="Parameter 5" id="param_5" name="param_5" type="text" class="validate">
-          <label for="param_5">Parameter 5</label>
-        </div>
+		<!-- <div class="input-field inline col s2"> -->
+          <!-- <input placeholder="Parameter 4" id="param_4" name="param_4" type="text" class="validate"> -->
+          <!-- <label for="param_4">Parameter 4</label> -->
+        <!-- </div> -->
+		<!-- <div class="input-field inline col s2"> -->
+          <!-- <input placeholder="Parameter 5" id="param_5" name="param_5" type="text" class="validate"> -->
+          <!-- <label for="param_5">Parameter 5</label> -->
+        <!-- </div> -->
 		<div class="col s2">
-		  <input type="submit" value="Submit">
+		  <input type="submit" value="Get Prediction">
 		<div class="input-field inline">
           <input disabled placeholder="Predicted value" id="out_value" type="text" class="validate">
           <label for="out_value">Predicted value:</label>
