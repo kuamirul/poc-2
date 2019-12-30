@@ -120,7 +120,8 @@ app.get('/getScore', function (req, res) {
       res.send('{ pageCount: ' + count + '}');
     });
   } else {
-    res.send('<p>some html</p>')
+    req.param('param_1')
+    res.send('param_1')
     res.send('{ pageCount: -1 }');
     res.render('score');
   }
